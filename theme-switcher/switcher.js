@@ -16,8 +16,5 @@ try {
 		shell.RegWrite('HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize\\SystemUsesLightTheme', '1', 'REG_DWORD')
 	}
 } catch (err) {
-	var shell = WScript.CreateObject('WScript.Shell')
-  shell.RegWrite('HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize\\AppsUseLightTheme', '1', 'REG_DWORD')
-  
-  WScript.Echo('The key was not found. \nA default key was created with a value of "1" (light theme). \nDon`t worry, with the subsequent launch, the theme should switch correctly.')
+  WScript.Echo('Keys not found. Maybe your version of Windows does not support changing themes.')
 }
