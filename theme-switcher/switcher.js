@@ -4,7 +4,7 @@ try {
   // '0' - dark theme, '1' - light theme
 	var currentAppTheme = shell.RegRead('HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize\\AppsUseLightTheme')
 
-	if (currentTheme) {
+	if (currentAppTheme) {
 		// Apps theme
 		shell.RegWrite('HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize\\AppsUseLightTheme', '0', 'REG_DWORD')
 		// System theme
