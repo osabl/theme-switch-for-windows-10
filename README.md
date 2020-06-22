@@ -5,4 +5,5 @@ This was created to simplify the process of changing themes and avoid going into
 ### How am I doing:
 * I put the folder with the script and the icon on the hard drive.
 * After I create a link on the desktop that points to the script file and change the link icon.
+
 Done! I have a button to quickly change the system theme.
