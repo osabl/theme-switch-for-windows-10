@@ -16,5 +16,5 @@ try {
 		shell.RegWrite('HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize\\SystemUsesLightTheme', '1', 'REG_DWORD')
 	}
 } catch (err) {
-  WScript.Echo('Keys not found. Maybe your version of Windows does not support changing themes.')
+  WScript.Echo(err.message)
 }
